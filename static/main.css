@@ -11,6 +11,23 @@ body {
     overflow-y: scroll;
 }
 
+a {
+    color: #1565c0; /* blue800 */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6a1b9a; /* purple800 */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
+    color: rgba(0, 0, 0, 0.87); /* 87% black */
+}
+
 main {
     margin-left: auto;
     margin-right: auto;
