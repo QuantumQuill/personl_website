@@ -1,0 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:security@daniel.micay.dev
+Canonical: https://daniel.micay.dev/.well-known/security.txt
+Encryption: openpgp4fpr:65EEFE022108E2B708CBFCF7F9E712E59AF5F22A
+Preferred-Languages: en
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEZe7+AiEI4rcIy/z3+ecS5Zr18ioFAmCeOPkACgkQ+ecS5Zr1
+8iomyA//bTyc+/RdjpPRff9yGwx956He5eLOMnAMV+X063P5GBRzFXYS9NDMDhS0
+J/xEGxmY8sg05egSwKF91BAam1f1K8u7d5nVMMe3hQvV2+HICeNR9UpoWvI+EzHV
+h2Y6wNeYcaRzWjOr2sYiZ1eq/dE58vDR+WItVpNXOIu/BOkQ/MivvAAYb7Ker8jS
+WcV5K+bA+kPryzgd7+4NN0DwXRiINvU2oFBaIohtH2jKYOp7dxBDMvzVAHgNopug
+qwHSCZ77PmMGjlQV1xcvZ/9x84O4ex6uBJN6mOF6UKrH3696O0ehEkhxQ9jTAj8D
+5kkZza/qvE+fDDE2hguVOLsNBIVl8j4OOXAErJUTnx7LOfN3Ipplkzd6jg2Rvq4c
+s6O4nXHADi8tVEzgFSu9hpESc3ChM72n1lJlcO8Ire9GK8LP1MbLuPR+wcyr/0lY
+9/2HmOMbdrfMSYqmPjwFZOTQS8cnaQTrvIiBcTXfo33U94HZLvU3YgYvLeIODmZj
+69zEMCTEKePkg7sdELkQ5hx6poMtg3NJVglf0j/FtsjxFmbhggpgINW3iOgciOhi
+OtsIJFnr9yXQTHWn5T0lip1uYuloTfJdFXbTNkjkHDXXxXW5BWWIvqmlObLC37cL
+z/EtWs0zkk1QahvzKsV7nPqhNZgmmzpb8BGqpKRxfprm5sA91cc=
+=X67f
+-----END PGP SIGNATURE-----
