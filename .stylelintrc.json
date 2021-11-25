@@ -5,6 +5,7 @@
         "indentation": 4,
         "no-descending-specificity": null,
         "max-line-length": null,
-        "selector-list-comma-newline-after": null
+        "selector-list-comma-newline-after": null,
+        "value-no-vendor-prefix": null
     }
 }
