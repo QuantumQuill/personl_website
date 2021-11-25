@@ -5,7 +5,7 @@ body {
     min-height: -webkit-fill-available; /* replace with stretch when standardized */
     font-family: Roboto, sans-serif;
     background-color: #fafafa; /* grey50 */
-    color: rgba(0 0 0 / 0.87); /* 87% black */
+    color: rgba(0 0 0 / 87%); /* 87% black */
     margin: 0;
     padding: 0;
     overflow-y: scroll;
@@ -25,7 +25,7 @@ a:hover {
 }
 
 h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
-    color: rgba(0 0 0 / 0.87); /* 87% black */
+    color: rgba(0 0 0 / 87%); /* 87% black */
 }
 
 main {
@@ -92,7 +92,7 @@ main {
 @media (prefers-color-scheme: dark) {
     body {
         background: #121212;
-        color: rgba(255 255 255 / 0.87); /* 87% white */
+        color: rgba(255 255 255 / 87%); /* 87% white */
     }
 
     a {
@@ -104,6 +104,6 @@ main {
     }
 
     h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
-        color: rgba(255 255 255 / 0.87); /* 87% white */
+        color: rgba(255 255 255 / 87%); /* 87% white */
     }
 }
