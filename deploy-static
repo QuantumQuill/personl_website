@@ -22,11 +22,12 @@ ssh $remote cp -a $active $target
 rsync -rpcv --chmod=D755,F644 --delete static-tmp/ $remote:$target
 ssh $remote sync -f $target
 ssh $remote ln -snf $target /srv/daniel.micay.dev
-ssh $remote sync .
+ssh $remote sync /srv/daniel.micay.dev
 
 sed -i "s|/srv/daniel.micay.dev|$target|" nginx.conf.tmp
-rsync -rpcv --chmod=D755,F644 --delete nginx.conf.tmp $remote:/etc/nginx/nginx.conf
-ssh $remote sync -f /etc/nginx/nginx.conf
+rsync -rptcv --chmod=D755,F644 --delete nginx.conf.tmp $remote:/etc/nginx/nginx.conf
+rsync -rptcv --chmod=D755,F644 --delete nginx/snippets/ $remote:/etc/nginx/snippets
+ssh $remote 'sync /etc/nginx/nginx.conf /etc/nginx/snippets/*'
 ssh $remote nginx -s reload
 
 echo
