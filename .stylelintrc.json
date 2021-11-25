@@ -4,6 +4,7 @@
         "comment-empty-line-before": null,
         "indentation": 4,
         "no-descending-specificity": null,
+        "max-line-length": null,
         "selector-list-comma-newline-after": null
     }
 }
