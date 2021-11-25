@@ -15,8 +15,9 @@ done
 
 stylelint static-tmp/**/*.css
 find static-tmp -name '*.css' -exec csso {} -o {} \;
+
 #eslint static-tmp/**/*.js
-find static-tmp -name '*.js' -exec terser --module -cmo {} {} \;
+#find static-tmp -name '*.js' -exec terser --ecma 2021 --module -cmo {} {} \;
 
 replace=""
 for file in static-tmp/**/*.css static-tmp/**/*.js; do
