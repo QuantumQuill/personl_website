@@ -29,7 +29,7 @@ done
 cp nginx/nginx.conf nginx.conf.tmp
 sed -i "$replace" static-tmp/**/*.html nginx.conf.tmp
 
-xmllint --noout static-tmp/**/*.@(html|svg|xml)
+xmllint --noout static-tmp/**/*.html
 validatornu --Werror --also-check-css --also-check-svg static-tmp/**/*.@(css|html|svg)
 find static-tmp -name '*.html' -exec html-minifier --collapse-whitespace \
     --process-scripts "application/ld+json" --collapse-boolean-attributes \
