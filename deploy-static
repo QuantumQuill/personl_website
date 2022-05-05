@@ -24,11 +24,9 @@ echo active is $active
 echo target is $target
 echo
 
-ssh $remote rm -rf $target
-ssh $remote cp -a $active $target
+ssh $remote "rm -rf $target && cp -a $active $target"
 rsync -rpcv --fsync --chmod=D755,F644 --delete static-tmp/ $remote:$target
-ssh $remote ln -snf $target /srv/daniel.micay.dev
-ssh $remote sync /srv/daniel.micay.dev
+ssh $remote "ln -snf $target /srv/daniel.micay.dev && sync /srv/daniel.micay.dev"
 
 sed -i "s|/srv/daniel.micay.dev|$target|" nginx-tmp/nginx.conf
 rsync -rptcv --fsync --chmod=D755,F644 --delete nginx-tmp/nginx.conf $remote:/etc/nginx/nginx.conf
