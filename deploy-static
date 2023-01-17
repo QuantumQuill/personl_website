@@ -30,6 +30,7 @@ ssh $remote "ln -snf $target /srv/daniel.micay.dev && sync /srv/daniel.micay.dev
 
 sed -i "s|/srv/daniel.micay.dev|$target|" nginx-tmp/nginx.conf
 rsync -rptcv --fsync --chmod=D755,F644 --delete nginx-tmp/nginx.conf $remote:/etc/nginx/nginx.conf
+rsync -rptcv --fsync --chmod=D755,F644 --delete nginx-tmp/mime.types $remote:/etc/nginx/mime.types
 rsync -rptcv --fsync --chmod=D755,F644 --delete nginx-tmp/snippets/ $remote:/etc/nginx/snippets
 ssh $remote nginx -s reload
 
