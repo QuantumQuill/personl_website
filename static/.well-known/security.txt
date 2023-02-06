@@ -3,22 +3,22 @@ Hash: SHA256
 
 Contact: mailto:security@daniel.micay.dev
 Canonical: https://daniel.micay.dev/.well-known/security.txt
-Encryption: openpgp4fpr:65EEFE022108E2B708CBFCF7F9E712E59AF5F22A
-Expires: 2023-10-19T00:00:00Z
+Encryption: data:application/x-age-public-key,age1dcftzgq00ykgwvxl5te6d5clqgx75h2g54c0u8gjc43mcnea7p7q3ma0yx
+Expires: 2024-02-06T00:00:00Z
 Preferred-Languages: en
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEZe7+AiEI4rcIy/z3+ecS5Zr18ioFAmNRR8kACgkQ+ecS5Zr1
-8io+CQ/9GOun/PFtVjcx5tqWiJ5BONZVyFklVv8ruZX8vcy71hifyxrElF9dPKlW
-/cqAl56z+TQbzc0fRoL/oJ9MeWZkEuVIEfIL91s7+XLwcArEZGUu71WNrQFWl11W
-HNGy7w3Ax5r1dX2bmkfPeUSjkfL1TCEKftgdpXkpi12Vlu8aFwt7SLVi6zrUl4pv
-HoYdzqjJwk7eA1DJK0ENNM3/Ur2xedcdE+qBuRGqEvXs8P8CYvLCRDRsLgrw2n1z
-ij9RYb6WYBZTCJDMc5QiyC2/02dgsNLO8eiXeiAEvamcqGrANi30CGa2ZDPsnaJI
-8ry3ycj3YfLKw4NJcp0oStc7Dd2obkDqpR4gd4H3VfSHVAFVvbSyWvnJ+3IpRmn3
-J33BnsyewZsPxG0g9LwlV6KjFAtEeLSn7XgwCTVWLS7oOJoYpOceAW0gRzmP1aD9
-0Jrv7rCx4qCfY4kqgSbJ+6l2mPDXnEsXRR7AcrdYG3N/Zbt5QKNacnddgcM6gOIb
-l7Llz0Eez0tvb/ZguYTqvhFp5RLkdDPEzKPuuPg7DaRs32os2aiZdv9Xt0MODkuh
-jN3pBYyUs6KpZBzBFddIh1dJVBBTj7vIC3wvnNM3trCFnpnM9BhTdLV+TxI5YphO
-7Gm2NzdjPPZWRyOF76l8z8WKl3hQE1o9Kj9DyIlxaNPoEvi7dE4=
-=pQTu
+iQIzBAEBCAAdFiEEZe7+AiEI4rcIy/z3+ecS5Zr18ioFAmPgp8sACgkQ+ecS5Zr1
+8ipEEA/+I5iiNzqWxufKDkzjgLTmceEcZuC/meOBKgnc0fyyY9/3gV38G/Olda81
+tzrydF5uYboS0hgV2OketnoqelZXxNMkPGlAHjshWsae9LgPHuYXZMVOLf/qeDtq
+i69IecMFIKa1Jc/p5cH5gLDc7OLvak+Ll+7JVlMNku0apNV42KXjzNUL7YJOMj4Y
+T/bLnAJOCmrQIamThh+kis21heFchLaHIHwy21AMTji/YH8ZbPd58Y2OTB/AGgh9
+8nn/vkv2wC0XWWciWBg58XR3jC6SdgM1DXpxngete91uixvz5u/4XkA+s+gQOMbK
+W/nzSJVrm3lJt/cTV1a8dkj9qmfeiLh7aErDdlaai/f1BnJH8FE1XQ/0VtRz58So
+iz1pdLdJybKs4gmQ/fsFZIrE0O9jDgDuXlUd/BnQFfq8r6P8kfysGA3aGaSd09Yz
+gTeLXn/y5dA3qo8oCE32eIfUl2CM8LAAKUCjmof2DEWC9g+ZDQv6uiDZ8O8Oeqd8
+duauIHUPZQMLz6GoAwa+iN6rjFmGNtwn2NVjMARkp7gQ/0hzOUB5g61HVAsvPdz7
+10GxP4AToTTJ6BxfK8YpipMTEHGWut+q/PWaU6uAWGlaunTHDsTuXZyIhLincUiP
+3cvy7K0S0/t8dFpdfxJmewJ57SuDnhToKzky0Uv2qMjPgCyAR1Y=
+=rlyq
 -----END PGP SIGNATURE-----
