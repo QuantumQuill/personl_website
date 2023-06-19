@@ -28,6 +28,7 @@ domains:
         - sshfp: *null_sshfp
         - mx: *null_mx
         - txt: *null_spf
+        - txt: google-site-verification=_KIVPb3jtLGwb4VK4McCg0ylwBsyIIkE7_i-IsT9pnU
         - https: &https
             content: 1 . alpn=h2
             ttl: *stable_ttl
@@ -74,6 +75,7 @@ domains:
         - sshfp: *null_sshfp
         - mx: *null_mx
         - txt: *null_spf
+        - txt: google-site-verification=b1OoUyeNiDNst_omxYwaofBWGXk5W6jhYH4q1KtOhlc
         - https: *https
 
       www.danielmicay.com: *subdomain
@@ -110,6 +112,7 @@ domains:
         - sshfp: *null_sshfp
         - mx: *null_mx
         - txt: *null_spf
+        - txt: google-site-verification=zwZbpUP65LIkyigWcGQGN7xA5F-QZ7_uhqWfEcnH8Bo
         - https: *https
 
       www.danielmicay.dev: *subdomain
@@ -146,6 +149,7 @@ domains:
         - sshfp: *null_sshfp
         - mx: *null_mx
         - txt: *null_spf
+        - txt: google-site-verification=1LzlbSZdM-0o4dfc1ubm5xICnEpCCUyHkspZAjrp82s
         - https: *https
 
       daniel.micay.ca: *subdomain
@@ -184,6 +188,7 @@ domains:
         - sshfp: *null_sshfp
         - mx: *null_mx
         - txt: *null_spf
+        - txt: google-site-verification=xEcmaXu1NMLkgZ7POHu_Mqqzv2TzWnPdvV9yKyRG29A
         - txt: "yandex-verification: 8829203c3e3e3b7b"
         - https: *https
 
