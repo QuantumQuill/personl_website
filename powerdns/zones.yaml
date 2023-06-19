@@ -1,0 +1,211 @@
+domains:
+  - domain: danielmicay.ca
+    ttl: &default_ttl 3600
+    records:
+      ns1.danielmicay.ca: &ns1
+        - a: &a 51.222.137.203
+        - aaaa: &aaaa 2607:5300:205:200::34ff
+        - mx: &null_mx 0 .
+        - sshfp: &null_sshfp 4 2 0000000000000000000000000000000000000000000000000000000000000000
+        - txt: &null_spf "v=spf1 -all"
+      ns2.danielmicay.ca: *ns1
+
+      danielmicay.ca:
+        - ns:
+            content: ns1.danielmicay.ca
+            ttl: &stable_ttl 86400
+        - ns:
+            content: ns2.danielmicay.dev
+            ttl: *stable_ttl
+        - soa:
+            content: ns1.danielmicay.ca hostmaster.danielmicay.ca 2023061701 3600 1800 1209600 3600
+            ttl: *stable_ttl
+
+        - a: *a
+        - aaaa: *aaaa
+        - caa: &caa 0 issue "letsencrypt.org; validationmethods=http-01; accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/115438588"
+        - caa: &caa_staging 0 issue "letsencrypt.org; validationmethods=http-01; accounturi=https://acme-staging-v02.api.letsencrypt.org/acme/acct/18645956"
+        - sshfp: *null_sshfp
+        - mx: *null_mx
+        - txt: *null_spf
+        - https: &https
+            content: 1 . alpn=h2
+            ttl: *stable_ttl
+
+      www.danielmicay.ca: &subdomain
+        - a: *a
+        - aaaa: *aaaa
+        - sshfp: *null_sshfp
+        - mx: *null_mx
+        - txt: *null_spf
+        - https: *https
+
+      _443._tcp.danielmicay.ca: &tlsa
+        - tlsa: 3 1 1 2e2a267bd64b42e6b6176cdadcb96e31ede32249adc48ac6c8da9e5e4560a686
+      _443._tcp.www.danielmicay.ca: *tlsa
+
+      _dmarc.danielmicay.ca: &dmarc
+        - txt: v=DMARC1; p=reject; adkim=s; aspf=s
+
+      _github-pages-challenge-thestinger.danielmicay.ca:
+        - txt: 7ec7a433afe8662bd0ce6ca77e5527
+
+  - domain: danielmicay.com
+    ttl: *default_ttl
+    records:
+      ns1.danielmicay.com: *ns1
+      ns2.danielmicay.com: *ns1
+
+      danielmicay.com:
+        - ns:
+            content: ns1.danielmicay.com
+            ttl: *stable_ttl
+        - ns:
+            content: ns2.danielmicay.com
+            ttl: *stable_ttl
+        - soa:
+            content: ns1.danielmicay.com hostmaster.danielmicay.com 2023061701 3600 1800 1209600 3600
+            ttl: *stable_ttl
+
+        - a: *a
+        - aaaa: *aaaa
+        - caa: *caa
+        - caa: *caa_staging
+        - sshfp: *null_sshfp
+        - mx: *null_mx
+        - txt: *null_spf
+        - https: *https
+
+      www.danielmicay.com: *subdomain
+
+      _443._tcp.danielmicay.com: *tlsa
+      _443._tcp.www.danielmicay.com: *tlsa
+
+      _dmarc.danielmicay.com: *dmarc
+
+      _github-pages-challenge-thestinger.danielmicay.com:
+        - txt: 823cf6d90b9b74ffe65ee959651bbe
+
+  - domain: danielmicay.dev
+    ttl: *default_ttl
+    records:
+      ns1.danielmicay.dev: *ns1
+      ns2.danielmicay.dev: *ns1
+
+      danielmicay.dev:
+        - ns:
+            content: ns1.danielmicay.dev
+            ttl: *stable_ttl
+        - ns:
+            content: ns2.danielmicay.dev
+            ttl: *stable_ttl
+        - soa:
+            content: ns1.danielmicay.dev hostmaster.danielmicay.dev 2023061701 3600 1800 1209600 3600
+            ttl: *stable_ttl
+
+        - a: *a
+        - aaaa: *aaaa
+        - caa: *caa
+        - caa: *caa_staging
+        - sshfp: *null_sshfp
+        - mx: *null_mx
+        - txt: *null_spf
+        - https: *https
+
+      www.danielmicay.dev: *subdomain
+
+      _443._tcp.danielmicay.dev: *tlsa
+      _443._tcp.www.danielmicay.dev: *tlsa
+
+      _dmarc.danielmicay.dev: *dmarc
+
+      _github-pages-challenge-thestinger.danielmicay.dev:
+        - txt: da0525c4c9f0b9f1ab6d6efaf5fdeb
+
+  - domain: micay.ca
+    ttl: *default_ttl
+    records:
+      ns1.micay.ca: *ns1
+      ns2.micay.ca: *ns1
+
+      micay.ca:
+        - ns:
+            content: ns1.micay.ca
+            ttl: *stable_ttl
+        - ns:
+            content: ns2.danielmicay.dev
+            ttl: *stable_ttl
+        - soa:
+            content: ns1.micay.ca hostmaster.micay.ca 2023061701 3600 1800 1209600 3600
+            ttl: *stable_ttl
+
+        - a: *a
+        - aaaa: *aaaa
+        - caa: *caa
+        - caa: *caa_staging
+        - sshfp: *null_sshfp
+        - mx: *null_mx
+        - txt: *null_spf
+        - https: *https
+
+      daniel.micay.ca: *subdomain
+      www.micay.ca: *subdomain
+
+      _443._tcp.micay.ca: *tlsa
+      _443._tcp.daniel.micay.ca: *tlsa
+      _443._tcp.www.micay.ca: *tlsa
+
+      _dmarc.micay.ca: *dmarc
+
+      _github-pages-challenge-thestinger.micay.ca:
+        - txt: 19a928e773ec457383796919dd6105
+
+  - domain: micay.dev
+    ttl: *default_ttl
+    records:
+      ns1.micay.dev: *ns1
+      ns2.micay.dev: *ns1
+
+      micay.dev:
+        - ns:
+            content: ns1.micay.dev
+            ttl: *stable_ttl
+        - ns:
+            content: ns2.micay.dev
+            ttl: *stable_ttl
+        - soa:
+            content: ns1.micay.dev hostmaster.micay.dev 2023061701 3600 1800 1209600 3600
+            ttl: *stable_ttl
+
+        - a: *a
+        - aaaa: *aaaa
+        - caa: *caa
+        - caa: *caa_staging
+        - sshfp: *null_sshfp
+        - mx: *null_mx
+        - txt: *null_spf
+        - txt: "yandex-verification: 8829203c3e3e3b7b"
+        - https: *https
+
+      daniel.micay.dev:
+        - a: *a
+        - aaaa: *aaaa
+        - sshfp: 4 2 1e716eeaff1b584704a3ca176cbf81f85a42d1f442a20419696ec3c6c2a2dcd5
+        - mx: *null_mx
+        - txt: *null_spf
+        - txt: "yandex-verification: e6b4e157a7939bde"
+        - https: *https
+
+      www.micay.dev: *subdomain
+
+      _443._tcp.micay.dev: *tlsa
+      _443._tcp.daniel.micay.dev: *tlsa
+      _443._tcp.www.micay.dev: *tlsa
+
+      _dmarc.micay.dev: *dmarc
+
+      _atproto.daniel.micay.dev:
+        - txt: did=did:plc:rctpcqcndx4hrkj3xgmyaz6c
+
+      _github-pages-challenge-thestinger.micay.dev:
+        - txt: fac8d9913d4cc6860e0ed2b8684856
