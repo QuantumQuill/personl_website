@@ -1,6 +1,6 @@
-nginx-tmp
-node_modules
-static-tmp
-lock
-venv
-/powerdns/keys
+/lock
+/nginx-tmp/
+/node_modules/
+/powerdns/keys/
+/static-tmp/
+/venv/
