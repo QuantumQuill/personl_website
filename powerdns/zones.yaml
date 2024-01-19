@@ -9,6 +9,9 @@ domains:
         - sshfp: &null_sshfp 4 2 0000000000000000000000000000000000000000000000000000000000000000
         - txt: &null_spf "v=spf1 -all"
       ns2.danielmicay.ca: *ns1
+      _853._tcp.ns1.danielmicay.ca: &tlsa
+        - tlsa: 3 1 1 2e2a267bd64b42e6b6176cdadcb96e31ede32249adc48ac6c8da9e5e4560a686
+      _853._tcp.ns2.danielmicay.ca: *tlsa
 
       danielmicay.ca:
         - ns:
@@ -41,8 +44,7 @@ domains:
         - txt: *null_spf
         - https: *https
 
-      _443._tcp.danielmicay.ca: &tlsa
-        - tlsa: 3 1 1 2e2a267bd64b42e6b6176cdadcb96e31ede32249adc48ac6c8da9e5e4560a686
+      _443._tcp.danielmicay.ca: *tlsa
       _443._tcp.www.danielmicay.ca: *tlsa
 
       _dmarc.danielmicay.ca: &dmarc
@@ -56,6 +58,8 @@ domains:
     records:
       ns1.danielmicay.com: *ns1
       ns2.danielmicay.com: *ns1
+      _853._tcp.ns1.danielmicay.com: *tlsa
+      _853._tcp.ns2.danielmicay.com: *tlsa
 
       danielmicay.com:
         - ns:
@@ -93,6 +97,8 @@ domains:
     records:
       ns1.danielmicay.dev: *ns1
       ns2.danielmicay.dev: *ns1
+      _853._tcp.ns1.danielmicay.dev: *tlsa
+      _853._tcp.ns2.danielmicay.dev: *tlsa
 
       danielmicay.dev:
         - ns:
@@ -130,6 +136,8 @@ domains:
     records:
       ns1.micay.ca: *ns1
       ns2.micay.ca: *ns1
+      _853._tcp.ns1.micay.ca: *tlsa
+      _853._tcp.ns2.micay.ca: *tlsa
 
       micay.ca:
         - ns:
@@ -169,6 +177,8 @@ domains:
     records:
       ns1.micay.dev: *ns1
       ns2.micay.dev: *ns1
+      _853._tcp.ns1.micay.dev: *tlsa
+      _853._tcp.ns2.micay.dev: *tlsa
 
       micay.dev:
         - ns:
