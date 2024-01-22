@@ -3,8 +3,8 @@ domains:
     ttl: &default_ttl 3600
     records:
       ns1.danielmicay.ca: &ns1
-        - a: &a 51.222.137.203
-        - aaaa: &aaaa 2607:5300:205:200::34ff
+        - a: &a 51.79.53.128
+        - aaaa: &aaaa 2607:5300:205:200::3afc
         - mx: &null_mx 0 .
         - sshfp: &null_sshfp 4 2 0000000000000000000000000000000000000000000000000000000000000000
         - txt: &null_spf "v=spf1 -all"
@@ -205,7 +205,7 @@ domains:
       daniel.micay.dev:
         - a: *a
         - aaaa: *aaaa
-        - sshfp: 4 2 1e716eeaff1b584704a3ca176cbf81f85a42d1f442a20419696ec3c6c2a2dcd5
+        - sshfp: 4 2 b45e5679cb2364cccd88103f55ae755d376bd5c4e3b84eaef00924479bc23c49
         - mx: *null_mx
         - txt: *null_spf
         - txt: "yandex-verification: e6b4e157a7939bde"
